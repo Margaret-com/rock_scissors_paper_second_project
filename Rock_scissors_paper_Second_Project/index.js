@@ -18,11 +18,12 @@ const yourScore = document.getElementById('yourScore')
 let player = localStorage.getItem('users') ? JSON.parse(localStorage.getItem('users')) : [] ;
 let id = player[player.length-1];
 
-if(id){
-playerName.innerText = `${id.name}`;
+
+if(!id){
+    window.location.href = "login.html";
 }
 else {
-    window.location.href = "login.html"
+    playerName.innerText = `${id.name}`;
 }
 
 results ();

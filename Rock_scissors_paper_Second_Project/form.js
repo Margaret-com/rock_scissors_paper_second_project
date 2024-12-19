@@ -60,6 +60,7 @@ if(window.location.pathname.includes("signUp.html")){
 
 //Handle Login
 if (window.location.pathname.includes("login.html")) {
+
     form.addEventListener('submit', (event) => {
         event.preventDefault();
 
