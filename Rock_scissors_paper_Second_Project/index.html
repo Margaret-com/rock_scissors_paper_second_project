@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link href="./style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+    <ul class="details">
+        <li id="playerName"></li>
+        <li id="players">Players</li>
+        <li id="yourScore">Your score</li>
+    </ul>
+    <button id="logout">Logout</button>
+    <p class="title">Rock Paper Scissors</p>
+    <br/> <br/>
+    <div class="container">
+        <button id="rock">
+           <img src="images/rock-emoji.png" class="move-icon"/>
+        </button>
+        <button id="paper">
+            <img src="images/paper-emoji.png" class="move-icon"/>
+        </button>
+        <button id="scissors">
+            <img src="images/scissors-emoji.png" class="move-icon"/>
+        </button>
+    </div>
+    <button id="resetBtn">
+        <img src="images/reset.png" class="move-icon"/>
+    </button>
+ 
+    <br/><br/>
+    <div class="resultArea">
+        <p class="score"></p>
+        <p class="choice">
+        </p>
+        <p class="result"></p>
+    </div>
+    <script type="module" src="index.js" defer>
+    </script>
+</body>
+</html>
